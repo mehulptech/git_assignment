@@ -28,13 +28,108 @@ e) Approval and Merging: Once the changes have been reviewed and approved, the p
 
 In summary, a pull request is a powerful tool for collaborative development, enabling teams to review, discuss, and integrate changes efficiently and effectively.
 
-c. Describe the steps to open a pull request?
+# c. Describe the steps to open a pull request?
 
-d. Describe the steps to add a collaborator to a repository (share write permissions)
+To open a pull request in GitHub, follow these steps:
 
-e. What is the difference between git and GitHub?
+1. Create a New Branch: Before making changes, create a new branch from the main branch (or the branch you want to base your changes on). You can do this using the following command in your terminal:
+   git checkout -b new-branch-name
 
-f. What does git diff do?
+2. Make Your Changes: Edit the files as needed to implement your feature or fix.
+
+3. Stage and Commit Your Changes: Once you've made your changes, stage them using git add and then commit them with a meaningful commit message:
+   git add .
+   git commit -m "Your commit message"
+
+4. Push Your Branch to GitHub: Push your new branch to the remote repository on GitHub:
+   git push origin new-branch-name
+
+5. Open a Pull Request on GitHub:
+   5.1) Go to your repository on GitHub.
+   You should see a banner or a button suggesting that you recently pushed a branch and offering to open a pull request. Click on "Compare & pull request." If you don't see the banner, you can manually navigate to the "Pull requests" tab and click on "New pull request."
+   5.2) Select the Branches:
+   In the "base" dropdown, select the branch you want to merge your changes into (usually main or master).
+   In the "compare" dropdown, select the branch that contains your changes (the branch you just pushed).
+   5.3) Fill Out the Pull Request Form:
+   Provide a descriptive title for your pull request.
+   Write a detailed description explaining what your changes do, why they are necessary, and any other relevant information.
+   Optionally, you can add labels, assign reviewers, and link issues related to your pull request.
+   5.4) Create the Pull Request: Click on "Create pull request" to submit your request for review.
+
+Your pull request is now open, and your team members can review your changes, provide feedback, and eventually merge your branch into the main codebase.
+
+# d. Describe the steps to add a collaborator to a repository (share write permissions)
+
+To add a collaborator to a GitHub repository and share write permissions, follow these steps:
+
+1. Access the Repository:
+   Log in to your GitHub account.
+   Navigate to the repository where you want to add a collaborator.
+2. Go to Repository Settings:
+   On the repository's main page, click on the Settings tab located near the top of the page, usually next to Security and Insights.
+3. Navigate to Collaborators:
+   In the left sidebar, under the "Access" section, click on Collaborators & teams.
+4. Add a Collaborator:
+   In the "Manage Access" section, click the Invite a collaborator button.
+   In the search box that appears, type the GitHub username or email address of the person you want to add.
+   Select the correct user from the list.
+5. Set Permissions:
+   After selecting the user, you can set their permissions. For write access, select Write from the available options. You can also choose other permission levels like Read, Triage, Maintain, or Admin depending on what you want them to do.
+6. Send the Invitation:
+   Click the Send invitation button. The user will receive an email invitation.
+7. Wait for Acceptance:
+   The invited collaborator will need to accept the invitation. Once they accept, they will have the permissions you assigned.
+8. Confirmation:
+   You can confirm the collaborator has accepted by checking the Collaborators list in the repository settings. Once accepted, their status will change from "Pending" to active.
+   Now the collaborator can push commits and manage the repository based on the permissions you've assigned.
+
+# e. What is the difference between git and GitHub?
+
+Git and GitHub are closely related but serve different purposes. Here's a breakdown of their differences:
+
+1. What They Are:
+   Git:
+   Git is a distributed version control system (VCS) that tracks changes in source code during software development.
+   It allows multiple developers to work on a project simultaneously without overwriting each other's work.
+   Git is a command-line tool that can be installed on your local machine.
+   GitHub:
+   GitHub is a cloud-based platform that hosts Git repositories and provides a web interface for version control and collaboration.
+   It adds a social and collaborative layer to Git, allowing users to share code, track issues, and review contributions.
+   GitHub is a service (now owned by Microsoft) that makes it easier to use Git, especially for distributed teams.
+2. Functions:
+   Git:
+   Manages code versions, tracks changes, and facilitates branching and merging.
+   Operates locally on your machine, but can be used with remote repositories.
+   Provides commands like git init, git commit, git branch, git merge, and git pull.
+   GitHub:
+   Hosts repositories in the cloud, making them accessible from anywhere.
+   Offers additional features like pull requests, issues tracking, wikis, and project boards.
+   Provides integration with various CI/CD pipelines, and third-party tools, and allows team collaboration.
+3. Usage:
+   Git:
+   Primarily used through the command line or Git GUI clients.
+   You can use Git without GitHub by setting up your own remote repository or working entirely locally.
+   GitHub:
+   Used through a web browser or GitHub desktop application.
+   Enhances Git by offering a centralized location for remote repositories and collaboration features.
+4. Ownership and Accessibility:
+   Git:
+   Open-source and maintained by a large community.
+   Free to use on any platform, without the need for an account.
+   GitHub:
+   A proprietary platform with free and paid plans.
+   Requires an account to create repositories, collaborate on projects, or use its other features.
+5. Scope:
+   Git:
+   Focuses solely on version control.
+   Used by many platforms, including Bitbucket, GitLab, and GitHub.
+   GitHub:
+   Extends Git with additional tools for project management, collaboration, and code review.
+   Specific to Git, but similar services like GitLab and Bitbucket provide comparable features.
+
+In summary, Git is the underlying technology that handles version control, while GitHub is a platform built on top of Git to make it easier to collaborate, manage, and share code with others.
+
+# f. What does git diff do?
 
 g. What is the main branch?
 
