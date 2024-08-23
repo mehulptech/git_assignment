@@ -250,4 +250,4 @@ Small or Trivial Changes: For minor changes like fixing a typo or a very small c
 Emergency Fixes: In case of critical issues that need to be fixed urgently, a direct push to main might be justified, although it’s still better to work on a temporary branch, test the fix, and then merge.
 
 Summary:
-The best practice is to work on a separate branch, push your changes there, and then merge into main after code review and testing. This approach keeps the main branch stable and ensures that only well-tested and reviewed code is deployed.
+The best practice is to work on a separate branch, push your changes there, and then merge into main after code review and testing. This approach keeps the main branch stable and ensures that only well-tested and reviewed code is deployed
